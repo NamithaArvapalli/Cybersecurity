@@ -13,30 +13,30 @@ Operating System – Windows 10 / Linux (Ubuntu)
 
 Tasks Performed
 
-Installation & Setup
+1.Installation & Setup
 Installed Nmap from the official site.
 Verified installation using:
 nmap --version
 
-Local Network Discovery
+2.Local Network Discovery
 Identified local IP and subnet using:
 ipconfig (Windows)
 ifconfig/ip a (Linux)
 Defined the target range: 192.168.1.0/24.
 
-TCP SYN Scan (Stealth Scan)
+3.TCP SYN Scan (Stealth Scan)
 Scanned the local network to discover active hosts and open ports:
 nmap -sS 192.168.1.0/24
 
-Packet Analysis with Wireshark
+4.Packet Analysis with Wireshark
 Captured and analyzed TCP SYN packets during the scan.
 tcp.flags.syn == 1 && tcp.flags.ack == 0
 
-Port and Service Enumeration
+5.Port and Service Enumeration
 Identified common services and ports using:
 nmap -sV
 Researched services like SSH (22), HTTP (80), RDP (3389), and others.
 
-Risk Analysis
+6.Risk Analysis
 Evaluated each open port for potential security threats.
 Recommended actions (e.g., disabling Telnet, enforcing SSH keys, restricting RDP).

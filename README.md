@@ -40,3 +40,17 @@ Researched services like SSH (22), HTTP (80), RDP (3389), and others.
 6.Risk Analysis
 Evaluated each open port for potential security threats.
 Recommended actions (e.g., disabling Telnet, enforcing SSH keys, restricting RDP).
+
+OUTPUT:
+--> These are the open ports 
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+3306/tcp open  mysql
+8009/tcp open  ajp13
+8099/tcp open  unknown
+53/tcp   open  domain
+
+
+
+

@@ -3,53 +3,46 @@ Day-1
 
 
 Network Scanning and Analysis using Nmap & Wireshark
-Overview:
-This project demonstrates basic to intermediate-level network scanning using Nmap, along with packet analysis using Wireshark, and identification of potential security risks in a local network environment.
 
-Tools Used:
+📌 Overview
+It demonstrates basic to intermediate-level network scanning using Nmap, along with packet analysis using Wireshark, and identification of potential security risks in a local network environment.
+
+🔧 Tools Used
+
 Nmap – Network scanner for host discovery and port scanning.
+
 Wireshark – Packet analysis tool for monitoring and interpreting network traffic.
+
 Operating System – Windows 10 / Linux (Ubuntu)
 
-Tasks Performed
+📂 Tasks Performed
 
-1.Installation & Setup
+✅ 1. Installation & Setup
 Installed Nmap from the official site.
-Verified installation using:
 nmap --version
 
-2.Local Network Discovery
+✅ 2. Local Network Discovery
 Identified local IP and subnet using:
-ipconfig (Windows)
-ifconfig/ip a (Linux)
-Defined the target range: 192.168.1.0/24.
+ipconfig   (Windows)
+ifconfig/ip a   (Linux)
+Defined the target range
 
-3.TCP SYN Scan (Stealth Scan)
+✅ 3. TCP SYN Scan (Stealth Scan)
 Scanned the local network to discover active hosts and open ports:
-nmap -sS 192.168.1.0/24
+nmap -sS <target-ip>
 
-4.Packet Analysis with Wireshark
+✅ 4. Packet Analysis with Wireshark
 Captured and analyzed TCP SYN packets during the scan.
-tcp.flags.syn == 1 && tcp.flags.ack == 0
 
-5.Port and Service Enumeration
+✅ 5. Port and Service Enumeration
 Identified common services and ports using:
-nmap -sV
-Researched services like SSH (22), HTTP (80), RDP (3389), and others.
+nmap -sV <target-ip>
+Researched services like SSH (22), HTTP (80), TCP, and others.
 
-6.Risk Analysis
+✅ 6. Risk Analysis
 Evaluated each open port for potential security threats.
-Recommended actions (e.g., disabling Telnet, enforcing SSH keys, restricting RDP).
 
-OUTPUT:
---> These are the open ports 
-PORT     STATE SERVICE
-135/tcp  open  msrpc
-445/tcp  open  microsoft-ds
-3306/tcp open  mysql
-8009/tcp open  ajp13
-8099/tcp open  unknown
-53/tcp   open  domain
+
 
 
 

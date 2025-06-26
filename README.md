@@ -1,5 +1,5 @@
 # Cybersecurity Internship
-Day-1
+Task-1
 
 
 Network Scanning and Analysis using Nmap & Wireshark
